@@ -1,0 +1,147 @@
+
+/* =========================================
+   NAMLATECH - PREMIUM PROFESSIONAL FOOTER
+========================================= */
+
+.footer {
+  width: 100%;
+  background: linear-gradient(135deg, #071d38, #0b2c52);
+  color: #ffffff;
+  margin-top: 70px;
+  padding: 65px 7% 0;
+  border-top: 1px solid rgba(147, 197, 253, 0.35);
+}
+
+.footer-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.6fr 1fr 1.2fr 1.3fr;
+  gap: 55px;
+  padding-bottom: 55px;
+}
+
+/* FOOTER COLUMNS */
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 17px;
+}
+
+/* COMPANY BRAND */
+
+.footer-column h2 {
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+
+.footer-column h2 span {
+  color: #60a5fa;
+}
+
+.footer-about p {
+  max-width: 300px;
+  color: #bdcde0;
+  font-size: 14px;
+  line-height: 2;
+}
+
+/* SECTION HEADINGS */
+
+.footer-column h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 0.7px;
+  margin-bottom: 12px;
+  position: relative;
+}
+
+.footer-column h3::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -12px;
+  width: 35px;
+  height: 2px;
+  background: #60a5fa;
+}
+
+/* FOOTER LINKS */
+
+.footer-column a {
+  color: #bdcde0;
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.footer-column a:hover {
+  color: #60a5fa;
+  transform: translateX(5px);
+}
+
+/* CONTACT DETAILS */
+
+.footer-column p {
+  color: #bdcde0;
+  font-size: 14px;
+  line-height: 1.9;
+  margin: 0;
+}
+
+/* COPYRIGHT SECTION */
+
+.footer-bottom {
+  max-width: 1300px;
+  margin: 0 auto;
+  min-height: 75px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.footer-bottom p {
+  color: #9fb2c9;
+  font-size: 12px;
+  letter-spacing: 0.3px;
+  margin: 0;
+}
+
+/* TABLET */
+
+@media (max-width: 950px) {
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 45px;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+  .footer {
+    padding: 45px 25px 0;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 35px;
+    padding-bottom: 40px;
+  }
+
+  .footer-bottom {
+    justify-content: center;
+    text-align: center;
+    padding: 20px 0;
+  }
+}
